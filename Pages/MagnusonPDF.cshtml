@@ -1,0 +1,72 @@
+﻿@page
+@Model FeaturesList
+@{
+    ViewData["Title"] = "MagnusonPDF";
+}
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">    
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="http://cloud.typography.com/6974072/711764/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="https://fast.fonts.net/cssapi/7ebbb4b1-23d6-41ef-a66f-9c2686917e5a.css">
+    <link rel="stylesheet" type="text/css" href="https://fast.fonts.net/cssapi/32dc9da3-a22d-4439-a9cf-00ad49532e97.css">
+    <link rel="stylesheet" type="text/css" href="http://files.magnusongroup.com/sitedocs/configurator/configurator.css">
+
+</head>
+<body>
+    <div class="row">
+
+        <div class="featureoptions">                    
+
+            <div id="summaryContainer">
+                <div class="configuration">
+                    <img alt="Magnuson Group" src="http://magnuson.blob.core.windows.net/sitedocs/imagegallery/mg-logo.png" class="mlogo">
+                    <h1>UMEA CONFIGURATION</h1>
+                    <div class="selection" id="bodySelection">
+                        <p>Body</p><img src="http://files.magnusongroup.com/sitedocs/configurator/Umea-Body-3.jpg" border="0"><p class="copy">Triple</p><img border="0" src="//files.magnusongroup.com/sitedocs/configurator/Color-MineralBronze.jpg"><p class="copy">Mineral Bronze</p>
+                    </div>
+                    <div class="selection" id="openingleftSelection">
+                        <p>Opening (Left)</p><img src="http://files.magnusongroup.com/sitedocs/configurator/Umea-Top-Opening-Waste.jpg"><p class="copy">Waste Opening</p><img border="0" src="http://files.magnusongroup.com/sitedocs/configurator/Color-SeaGreen.jpg"><p class="copy">Sea Green</p>
+                    </div>
+                    <div class="selection" id="openingcenterSelection">
+                        <p>Opening (Center)</p><img src="http://files.magnusongroup.com/sitedocs/configurator/Umea-Top-Opening-Cans.jpg"><p class="copy">Circle Opening</p><img border="0" src="//files.magnusongroup.com/sitedocs/configurator/Color-ClementineOrange.jpg"><p class="copy">Clemenetine Orange</p>
+                    </div>
+                    <div class="selection" id="openingrightSelection">
+                        <p>Opening (Right)</p><img src="http://files.magnusongroup.com/sitedocs/configurator/Umea-Top-Opening-Paper.jpg"><p class="copy">Paper Opening</p><img border="0" src="//files.magnusongroup.com/sitedocs/configurator/Color-MarigoldYellow.jpg"><p class="copy">Marigold Yellow</p>
+                    </div>
+                    <div class="selection" id="hoodSelection">
+                        <p>Hood</p><img src="http://files.magnusongroup.com/sitedocs/configurator/Umea-Hood-Angled.jpg"><p class="copy">Angled Hood</p><img border="0" src="http://files.magnusongroup.com/sitedocs/configurator/Color-SkyWhite.jpg"><p class="copy">Sky White</p>
+                    </div>
+                    <div class="selection" id="labelleftSelection">
+                        <p>Label (Left)</p><img src="http://files.magnusongroup.com/sitedocs/configurator/umea-multi_lingual_pictogram_label-waste.jpg"><p class="copy">Waste</p><img border="0" src="http://files.magnusongroup.com/sitedocs/configurator/Color-SeaGreen.jpg"><p class="copy">Cactus Green Vinyl</p>
+                    </div>
+                    <div class="selection" id="labelcenterSelection">
+                        <p>Label (Center)</p><img src="http://files.magnusongroup.com/sitedocs/configurator/umea-multi_lingual_pictogram_label-recycling2.jpg"><p class="copy">Recycling Arrows</p><img border="0" src="//files.magnusongroup.com/sitedocs/configurator/Color-ClementineOrange.jpg"><p class="copy">Bright Orange Vinyl</p>
+                    </div>
+                    <div class="selection" id="labelrightSelection">
+                        <p>Label (Right)</p><img src="http://files.magnusongroup.com/sitedocs/configurator/umea-multi_lingual_pictogram_label-organics.jpg"><p class="copy">Organics</p><img border="0" src="//files.magnusongroup.com/sitedocs/configurator/Color-MarigoldYellow.jpg"><p class="copy">Sunflower Vinyl</p>
+                    </div>
+                    <div class="selection" id="sidepanelSelection">
+                        <p>Side Panel :</p><img src="http://files.magnusongroup.com/sitedocs/configurator/Umea-Side-Panel-Cutout-Waste.jpg"><p class="copy">Waste Cutout</p><img border="0" src="http://files.magnusongroup.com/sitedocs/configurator/Color-SkyWhite.jpg"><p class="copy">Sky White</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="canvasContainer">
+            <div class="row no-gutter" id="canvasRowContainer">
+                <canvas id="magnusonCanvas" touch-action="none" width="1344" height="762" tabindex="1" style="outline: none;"></canvas>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
+

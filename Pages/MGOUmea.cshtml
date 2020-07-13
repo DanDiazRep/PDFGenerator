@@ -1,0 +1,65 @@
+﻿
+    <html>
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6974072/711764/css/fonts.css">
+        <link rel="stylesheet" type="text/css" href="https://fast.fonts.net/cssapi/7ebbb4b1-23d6-41ef-a66f-9c2686917e5a.css">
+        <link rel="stylesheet" type="text/css" href="https://fast.fonts.net/cssapi/32dc9da3-a22d-4439-a9cf-00ad49532e97.css">
+        <link rel="stylesheet" type="text/css" href="https://api.servexusinc.com/Magnuson/css/umeaStyle.css">
+
+    </head>
+    <body>
+        <div class="row">
+
+            <div class="featureoptions">
+
+                <div id="summaryContainer">
+                    <div class="configuration">
+                        <img alt="Magnuson Group" src="http://magnuson.blob.core.windows.net/sitedocs/imagegallery/mg-logo.png" class="mlogo">
+                        <h1>UMEA CONFIGURATION</h1>
+                        <div class="selection" id="skuSelection">
+                            <p>SKU</p><p class="copy">{sku}</p>
+                        </div>
+                        <div class="selection" id="bodySelection" >
+                            <p>Body</p><img src="{bodySizeThumbnail}" border="0"><p class="copy">{bodySize}</p><img border="0" src={bodyColorThumbnail}><p class="copy">{bodyColor}</p>
+                        </div>
+                        <div class="selection" id="openingleftSelection" style="display:{left};">
+                            <p>Opening (Left)</p><img src="{topLeftThumbnail}"><p class="copy">{topLeft}</p><img border="0" src="{topLeftColorThumbnail}"><p class="copy">{topLeftColor}</p>
+                        </div>
+                        <div class="selection" id="openingcenterSelection" style="display:{center};">
+                            <p>Opening (Center)</p><img src="{topCenterThumbnail}"><p class="copy">{topCenter}</p><img border="0" src="{topCenterColorThumbnail}"><p class="copy">{topCenterColor}</p>
+                        </div>
+                        <div class="selection" id="openingrightSelection" style="display:{right};">
+                            <p>Opening (Right)</p><img src="{topRightThumbnail}"><p class="copy">{topRight}</p><img border="0" src="{topRightColorThumbnail}"><p class="copy">{topRightColor}</p>
+                        </div>
+                        <div class="selection" id="hoodSelection">
+                            <p>Hood</p><img src="{hoodThumbnail}"><p class="copy">{hood}</p><img border="0" src="{hoodColorThumbnail}" style="display:{noHood};"><p class="copy" style="display:{noHood};">{hoodColor}</p>
+                        </div>
+                        <div class="selection" id="labelleftSelection" style="display:{left};">
+                            <p>Label (Left)</p><img src="{labelLeftThumbnail}"><p class="copy">{labelLeft}</p><img border="0" src="{labelLeftColorThumbnail}"><p class="copy">{labelLeftColor}</p>
+                        </div>
+                        <div class="selection" id="labelcenterSelection" style="display:{center};">
+                            <p>Label (Center)</p><img src="{labelCenterThumbnail}"><p class="copy">{labelCenter}</p><img border="0" src="{labelCenterColorThumbnail}"><p class="copy">{labelCenterColor}</p>
+                        </div>
+                        <div class="selection" id="labelrightSelection" style="display:{right};">
+                            <p>Label (Right)</p><img src="{labelRightThumbnail}"><p class="copy">{labelRight}</p><img border="0" src="{labelRightColorThumbnail}"><p class="copy">{labelRightColor}</p>
+                        </div>
+                        <div class="selection" id="sidepanelSelection">
+                            <p>Side Panel</p><img src="{sidepanelThumbnail}"><p class="copy">{sidepanel}</p><img border="0" src="{sidepanelColorThumbnail}"><p class="copy">{sidepanelColor}</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="https://api.servexusinc.com/Magnuson/Images/{productImage}" width="1344" height="762" style="position:absolute;top:160px;left: 620px;">
+
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        </div>
+    </body>
+    </html>
